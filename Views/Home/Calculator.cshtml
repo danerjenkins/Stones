@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<head>
+
+    <title>Tutoring Fee Calculator</title>
+	
+	<link href="c:\users\daner\source\repos\webapplication1\wwwroot\css\site.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="content">
+        <h1>Tutoring Fee Calculator</h1>
+        <form id="calculator-form">
+            <label for="hours">Enter number of hours:</label>
+            <input type="number" id="hours" name="hours" min="1" required>
+            <br><br>
+
+            <label for="rate">Hourly Rate:</label>
+            <input type="text" id="rate" value="20" disabled>
+            <br><br>
+
+            <button type="button" id="calculate-btn">Calculate Total</button>
+        </form>
+
+        <h3>Total Fee:</h3>
+        <input type="text" id="total-fee" disabled>
+        <br><br>
+        <p id="error-message" style="color: red;"></p>
+    </section>
+    <script src="c:\users\daner\source\repos\webapplication1\wwwroot\js\site.js"></script>
+</body>
